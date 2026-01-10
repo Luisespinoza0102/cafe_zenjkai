@@ -1233,13 +1233,22 @@ ul { margin-top: 5px;}
     .carousel-container { width: 100%; overflow: hidden; }
     .slide { height: 250px; }
     
-    .input-row { 
-        flex-direction: column; /* Arregla que la hora se salga del form */
-        gap: 0;
+    /* Forzamos que la fecha y la hora se pongan una debajo de la otra */
+    .input-row {
+        flex-direction: column !important;
+        gap: 15px !important; /* Espacio entre fecha y hora */
     }
-    
+
+    /* Aseguramos que los grupos de input ocupen todo el ancho */
+    .input-row .input-group {
+        width: 100% !important;
+    }
+
+    /* Ajuste visual para que el texto no choque */
     .res-form-card {
-        width: 100%;
-        padding: 15px;
+        padding: 20px;
+        width: 95%;
+        margin: 0 auto;
     }
+
 }
