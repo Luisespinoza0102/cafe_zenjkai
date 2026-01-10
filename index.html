@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Zenkai</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="icon" href="./static/img/logo-modified.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./static/img/logo.png" alt="" class="main-logo" onerror="this.style.display='none'">
+            <span class="logo-text">CAFÉ <span class="highlight">ZENKAI</span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#concepto">Concepto</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#talleres">Talleres</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="nav-btns">
+            <button class="btn-outline" onclick="location.href='#reservaciones'">Reservar</button>
+            <button class="btn-primary" onclick="location.href='#talleres'">Inscribirse</button></div>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <img src="./static/img/logo-modified.png" alt="logo" width="150px">
+            <h1><span class="text-orange">CAFÉ</span> <span class="text-blue">ZENKAI</span>
+            </h1>
+            <p class="tagline">Recargar tu energía. Entrena tu mente.</p>
+            <p class="hero-description">Tu centro de experiencia híbrido en Punto Fijo: café premiun, cowork, <br> servicio técnico y talleres tecnológicos</p>
+            <div class="hero-actions">
+              <button class="btn-large orange" onclick="location.href='#reservaciones'">RESERVAR ESPACIO</button>
+              <button class="btn-large blue" onclick="location.href='#talleres'">INSCRIBIRSE EN TALLERES</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="concepto" class="section">
+        <p class="section-tag">NUESTRO CONCEPTO</p>
+        <div class="concepto-container">
+            <div class="concepto-des">
+                            <h2>¿Qué es <span class="text-orange">Café</span> <span class="text-blue">Zenkai</span>?
+            </h2>
+            <p class="concept-text">
+                <strong class="zenkai-strong">Zenkai (全快)</strong> es un término japonés que significa "recuperación completa" o "plena restauración". En el anime Dragon Ball, representa el poder de renacer más fuerte después de superar una batalla. <br><br> Café ZenKai encarna esta filosofía: un espacio donde puedes <span class="text-orange"><strong>recargar tu energía</strong></span>, <span class="text-blue"><strong>entrenar tu mente</strong></span> y emerger más fuerte para enfrentar tus desafíos. <br><br> Combinamos cafetería premium, espacios de cowork, servicio técnico de computadoras y talleres tecnológicos en un centro de experiencia único en Punto Fijo, Venezuela
+            </p>
+            </div>
+            <div class="concept-cards">
+                <div class="card card-concept border-orange">
+                    <i data-lucide="zap" class="text-orange"></i>
+                    <h4 class="subtitle">Poder Renovado</h4>
+                    <p>Renaces más fuerte después de cada desafío.</p>
+                </div>
+                <div class="card card-concept border-orange">
+                    <i data-lucide="coffee" class="text-orange"></i>
+                    <h4 class="subtitle">Energía Premiun</h4>
+                    <p>Café de especialidad y postres artesanales que elevan tu experiencia.</p>
+                </div>
+                <div class="card card-concept border-orange">
+                    <i data-lucide="brain" class="text-orange"></i>
+                    <h4 class="subtitle">Enfoque Total</h4>
+                    <p>Espacios diseñados para maximizar tu concentración y productividad.</p>
+                </div>
+                <div class="card card-concept border-orange">
+                    <i data-lucide="zap" class="text-orange"></i>
+                    <h4 class="subtitle">Comunidad</h4>
+                    <p>Un lugar donde mentes creativas y tecnológicas convergen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="servicios">
+        <p class="section-tag center">NUESTROS SERVICIOS</p>
+        <h2 class="center">Todo en un <span class="text-orange">Solo</span> <span class="text-blue">Lugar</span></h2>
+        <h4 class="center">Descubre todos los servicios que ofrecemos para potenciar tu productividad, creatividad y bienestar.</h4>
+        <div class="services-grid">
+            <div class="card service-card border-orange">
+                <i data-lucide="coffee"></i>
+                <h3 class="subtitle">Cafetería Premiun</h3>
+                <p>Café de especialidad, bebidas artesanales y un ambiente acogedor para disfrutar cada taza.</p>
+                <ul class="li-orange">
+                    <li>Café de origen</li>
+                    <li>Bebidas frías y caliente</li>
+                    <li>Ambiente acogedor</li>
+                </ul>
+            </div>
+            <div class="card service-card border-blue">
+                <i data-lucide="cake"></i>
+                <h3 class="subtitle">Postres Artesanales</h3>
+                <p>Deliciosos postres elaborados con ingredientes de calidad para complementar tu experiencia</p>
+                <ul class="li-blue">
+                    <li>Tortas y pasteles</li>
+                    <li>opcines veganas</li>
+                    <li>Postres del día</li>
+                </ul>
+            </div>
+            <div class="card service-card border-orange">
+                <i data-lucide="monitor"></i>
+                <h3 class="subtitle">Área de Cowork</h3>
+                <p>Espacios de trabajo equipados con todo lo que necesitas para ser productivo</p>
+                <ul class="li-orange">
+                    <li>Internet de alta velocidad</li>
+                    <li>Estaciones de trabajo</li>
+                    <li>Salas de reuniones</li>
+                </ul>
+            </div>
+            <div class="card service-card border-blue">
+                <i data-lucide="settings"></i>
+                <h3 class="subtitle">Servicio Técnico</h3>
+                <p>Reparación y Mantenimiento de computadoras con técnicos especializados.</p>
+                <ul class="li-blue">
+                    <li>Diagnóstico Gratuito</li>
+                    <li>Reparación de Hardware</li>
+                    <li>Actualización de Software</li>
+                </ul>
+            </div>
+            <div class="card service-card border-orange">
+                <i data-lucide="graduation-cap"></i>
+                <h3 class="subtitle">Talleres Tecnológicos</h3>
+                <p>Cursos prácticos de programación, diseño, marketing digital y más.</p>
+                <ul class="li-orange">
+                    <li>Instructores expertos</li>
+                    <li>Proyectos Reales</li>
+                    <li>Certificados</li>
+                </ul>
+            </div>
+            <div class="card  service-card border-blue">
+                <i data-lucide="wifi"></i>
+                <h3 class="subtitle">Conectividad Total</h3>
+                <p>Internet de fibra óptica de alta velocidad en todo el espacio.</p>
+                <ul class="li-blue">
+                    <li>Fibra Óptica</li>
+                    <li>Red segura</li>
+                    <li>Sin Límites</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="talleres">
+        <p class="section-tag center">FORMACIÓN TÉCNOLÓGICA</p>
+        <h2 class="center">Talleres y <span class="text-blue">Cursos</span></h2>
+        <p class="center">Potencia tu carrera con nuestros talleres prácticos impartidos por profesionales de la industria</p>
+
+        <div class="talleres-grid">
+            <div class="card t-card orange-glow">
+                <div class="t-icon"><i data-lucide="code-2"></i></div>
+                <h3>Introducción a la Programación</h3>
+                <p>Aprende los fundamentos de la programación desde cero con proyectos prácticos.</p>
+                <div class="t-details">
+                    <span><i data-lucide="users"></i>12 cupos</span>
+                    <span><i data-lucide="calendar"></i>4 semanas</span>
+                </div>
+                <button class="btn-t-orange">Inscribirse</button>
+                <button class="t-btn-blue" onclick="openFlyer('./static/img/progra.png')">Ver Información</button>
+            </div>
+            <div class="card t-card blue-glow">
+                <div class="t-icon"><i data-lucide="palette"></i></div>
+                <h3>Diseño Gráfico para Redes Sociales</h3>
+                <p>Domina las herramientas de diseño para crear contenido impactante.</p>
+                <div class="t-details">
+                    <span><i data-lucide="users"></i>10 cupos</span>
+                    <span><i data-lucide="calendar"></i>3 semanas</span>
+                </div>
+                <button class="btn-t-blue">Inscribirse</button>
+                <button class="t-btn-orange" onclick="openFlyer('./static/img/diseño.png')">Ver Información</button>
+            </div>
+            <div class="card t-card orange-glow">
+                <div class="t-icon"><i data-lucide="layout"></i></div>
+                <h3>Fundamentos UI/UX</h3>
+                <p>Diseña experiencias de usuario memorables e interfaces intuitivas.</p>
+                <div class="t-details">
+                    <span><i data-lucide="users"></i>12 cupos</span>
+                    <span><i data-lucide="calendar"></i>5 semanas</span>
+                </div>
+                <button class="btn-t-orange">Inscribirse</button>
+                <button class="t-btn-blue" onclick="openFlyer('./static/img/uiux.png')">Ver Información</button>
+            </div>
+            <div class="card t-card blue-glow">
+                <div class="t-icon"><i data-lucide="trending-up"></i></div>
+                <h3>Marketing Digital</h3>
+                <p>Estrategias Digitales para hacer crecer tu marca o negocio.</p>
+                <div class="t-details">
+                    <span><i data-lucide="users"></i>20 cupos</span>
+                    <span><i data-lucide="calendar"></i>4 semanas</span>
+                </div>
+                <button class="btn-t-blue">Inscribirse</button>
+                <button class="t-btn-orange" onclick="openFlyer('./static/img/marketing.png')">Ver Información</button>
+            </div>
+            <div class="card t-card orange-glow">
+                <div class="t-icon"><i data-lucide="cpu"></i></div>
+                <h3>Mantenimiento de Computadoras</h3>
+                <p>Aprende a diagnosticar, reparar y optimizar equipos de cómputo.</p>
+                <div class="t-details">
+                    <span><i data-lucide="users"></i>8 cupos</span>
+                    <span><i data-lucide="calendar"></i>3 semanas</span>
+                </div>
+                <button class="btn-t-orange">Inscribirse</button>
+                <button class="t-btn-blue" onclick="openFlyer('./static/img/compu.png')">Ver Información</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="flyerModal" class="modal" onclick="closeModal()">
+    <span class="close-modal">&times;</span>
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <img id="flyerImg" src="" alt="Flyer del Taller">
+    </div>
+</div>
+
+    <section class="section" id="reservaciones">
+        <div class="reservation-container">
+            <div class="res-content">
+                <p class="section-tag">RESERVACIONES</p>
+                <h2>Reserva tu <span class="text-orange">Espacios</span></h2>
+                <p class="res-description">
+                    Asegura tu lugar en nuestras instalaciones. Ya sea para trabajar, una reunión importante o recibir asistencia técnica.
+                </p>
+                <ul class="res-features">
+                    <li><i data-lucide="check-circle" class="text-blue"></i>Espacios equipados con tecnología moderna</li>
+                    <li><i data-lucide="check-circle" class="text-blue"></i>Internet de fibra óptica de alta velocidad</li>
+                    <li><i data-lucide="check-circle" class="text-blue"></i>Café y snacks incluidos</li>
+                    <li><i data-lucide="check-circle" class="text-blue"></i>Ambiente profesional y acogedor</li>
+                </ul>
+            </div>
+
+            <div class="res-form-card orange-glow">
+                <form action="" class="" id="reservationForm">
+                    <div class="input-group">
+                        <label for="">Nombre Completo</label>
+                        <input type="text" placeholder="Ej. Juan Perez" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="">Servicio a Reservar</label>
+                        <select required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="cowork">Espacio de Cowork</option>
+                            <option value="reunion">Sala de Reuniones</option>
+                            <option value="tercnico">Servicio Técnico</option>
+                            <option value="taller">Taller Privado</option>
+                        </select>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="">Fecha</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="">Hora</label>
+                            <input type="time" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit-res">CONFIRMAR RESERVA</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="galeria">
+        <p class="section-tag center">NUESTRAS INSTALACIONES</p>
+        <h2 class="center">Conoce <span class="text-orange">CAFÉ ZENKAI</span></h2>
+        <h4 class="center">Un espacio diseñado para inspirar productividad, creatividad y bienestar</h4>
+
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+            <div class="main-carousel" id="carousel">
+                <div class="slide">
+                    <img src="./static/img/2.png" alt="Intalación Café Zenkai">
+                    <div class="slide-info-overlay">
+                        <h3>Área Principal</h3>
+                        <p>Espacio moderno con cafetería y estaciones e trabajo</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="./static/img/3.png" alt="Cafetería">
+                    <div class="slide-info-overlay">
+                        <h3>Cafetería Premium</h3>
+                        <p>Café de especialidad y postres artesanales</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="./static/img/1.png" alt="cowork">
+                    <div class="slide-info-overlay">
+                        <h3>Área Cowork</h3>
+                        <p>Estaciones equipadas para máxima productividad</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-btn" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="carousel-btn" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots">
+            <span class="dot acive" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        </div>
+        
+    </section>
+
+    <section id="experiencia" class="section">
+    <p class="section-tag center">FLUJO DEL SERVICIO</p>
+    <h2 class="center">Experiencia <span class="text-blue">ZenKai</span></h2>
+
+    <div class="timeline-wrapper">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <span class="step-num">01</span>
+                <h4>Llegada</h4>
+                <p>Eres recibido en un ambiente acogedor. Ordena tu café mientras te instalas</p>
+            </div>
+            <div class="timeline-dot orange-glow-icon">
+                <i data-lucide="door-open"></i>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="timeline-dot blue-glow-icon">
+                <i data-lucide="clipboard-check"></i>
+            </div>
+            <div class="timeline-content blue">
+                <span class="step-num">02</span>
+                <h4>Registro</h4>
+                <p>Check-in rápido para acceder a nuestros servicios y espacios.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <span class="step-num">03</span>
+                <h4>Trabajo/Estudio</h4>
+                <p>Utiliza nuestras estaciones de cowork o salas de reuniones</p>
+            </div>
+            <div class="timeline-dot orange-glow-icon">
+                <i data-lucide="laptop"></i>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="timeline-dot blue-glow-icon">
+                <i data-lucide="settings"></i>
+            </div>
+            <div class="timeline-content blue">
+                <span class="step-num">04</span>
+                <h4>Soporte Técnico</h4>
+                <p>Si necesitas asistencia, nuestros técnicos están disponbile.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <span class="step-num">05</span>
+                <h4>Aprendizaje</h4>
+                <p>Participa en talleres y cursos para potenciar tus habilidades..</p>
+            </div>
+            <div class="timeline-dot orange-glow-icon">
+                <i data-lucide="graduation-cap"></i>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="timeline-dot blue-glow-icon">
+                <i data-lucide="refresh-cw"></i>
+            </div>
+            <div class="timeline-content blue">
+                <span class="step-num">06</span>
+                <h4>Renovación</h4>
+                <p>Sales renovado, más productivo y listo para conquistar tus metas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="section" id="ubicacion">
+        <p class="section-tag center">ENCUÉNTRANOS</p>
+        <h2 class="center">Nuestra <span class="text-blue">Ubicación</span></h2>
+        <h4 class="center">Estamos estratégicamente ubicados en el corazón de Punto Fijo</h4>
+
+        <div class="location-container">
+            <div class="map-box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.582216252689!2d-70.19543159999999!3d11.7239747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8592d5302aa79d%3A0x3d1b950d42c255e!2sLas%20Virtudes%2C%20Punto%20Fijo%204122%2C%20Falc%C3%B3n!5e0!3m2!1ses-419!2sve!4v1767932457117!5m2!1ses-419!2sve" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="info-grid">
+
+                <div class="info-card" onclick="activateCard(this)">
+                    <i data-lucide="map"></i>
+                    <div>
+                       <h3>Dirección</h3>
+                       <p>Punto Fijo, Estado Falcón, Venezuela</p>
+                       <h5>Centro Comercial Las Virtudes</h5>
+                    </div>
+                </div>
+
+                <div class="info-card" onclick="activateCard(this)">
+                    <i data-lucide="clock"></i>
+                    <div>
+                       <h3>Horarios</h3>
+                       <p>Lunes a Viernes: 8:00 AM - 8:00 PM</p>
+                       <h5>Sábados: 9:00 AM - 6:00 PM</h5>
+                    </div>
+                </div>
+
+                <div class="info-card" onclick="activateCard(this)">
+                    <i data-lucide="phone"></i>
+                    <div>
+                       <h3>Teléfono</h3>
+                       <p>+58 412 XXX XXXX</p>
+                    </div>
+                </div>
+
+                <div class="info-card" onclick="activateCard(this)">
+                    <i data-lucide="mail"></i>
+                    <div>
+                       <h3>Email</h3>
+                       <p>infocafezenkai@gmail.com</p>
+                       <h5>tallereszenkai@gmail.com</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contacto">
+        <div class="contact-wrapper">
+            <div class="contact-header center">
+                <p class="section-tag">CONTÁCTANOS</p>
+                <h2>¿Tienes <span class="text-blue">Preguntas</span>?</h2>
+                <p>Estamos aquí para ayudarte. Envíanos un mensaje y te responderemos lo antes posible.</p>
+            </div>
+
+            <form action="" class="zenkai-form" id="contactForm">
+                <div class="form-group">
+                    <label for="">Nombre Completo</label>
+                    <input type="text" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="Coreeo@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Mensaje</label>
+                    <textarea rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                </div>
+                <button type="submit" class="btn-large blue">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="zenaki-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="./static/img/logo.png" alt="Café Zenkai Logo">
+                    <span class="logo-text">CAFÉ <span class="text-blue">ZENKAI</span></span>
+                </div>
+                <p class="footer-bio">
+                    Centro de experiencia híbrido donde puedes recargar tu energía, entrenar tu mente y renovarte para conquistar tus metas
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Enlaces</h4>
+                <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#concepto">Concepto</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#talleres">Talleres</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <div class="icon-box instagram"><i data-lucide="instagram"></i></div>
+                    <div class="icon-box facebook"><i data-lucide="facebook"></i></div>
+                    <div class="icon-box twitter"><i data-lucide="twitter"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+        <p>&copy; 2026 Café ZenKai. Todos los derechos reservados.</p>
+        <p>Hecho con <span class="text-orange">⚡</span> en Punto Fijo, Venezuela.</p>
+    </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
