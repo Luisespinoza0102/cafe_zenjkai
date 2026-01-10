@@ -1232,23 +1232,27 @@ ul { margin-top: 5px;}
     /* --- CARRUSEL Y FORMULARIOS --- */
     .carousel-container { width: 100%; overflow: hidden; }
     .slide { height: 250px; }
-    
-    /* Forzamos que la fecha y la hora se pongan una debajo de la otra */
+
     .input-row {
-        flex-direction: column !important;
-        gap: 15px !important; /* Espacio entre fecha y hora */
+        display: flex !important;
+        flex-direction: column !important; /* Esto los pone uno debajo del otro */
+        gap: 0 !important; /* Eliminamos el gap horizontal */
     }
 
-    /* Aseguramos que los grupos de input ocupen todo el ancho */
     .input-row .input-group {
-        width: 100% !important;
+        width: 100% !important; /* Cada uno toma el ancho total disponible */
+        margin-bottom: 15px; /* Espacio vertical entre fecha y hora */
     }
 
-    /* Ajuste visual para que el texto no choque */
+    /* Ajuste extra para que los campos no se vean pegados a los bordes */
     .res-form-card {
-        padding: 20px;
-        width: 95%;
-        margin: 0 auto;
+        padding: 20px 15px !important;
+    }
+
+    .res-form-card input, 
+    .res-form-card select {
+        width: 100% !important;
+        box-sizing: border-box; /* Evita que el padding extra ensanche el input */
     }
 
 }
