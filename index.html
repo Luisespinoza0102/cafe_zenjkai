@@ -15,6 +15,9 @@
             <img src="./static/img/logo.png" alt="" class="main-logo" onerror="this.style.display='none'">
             <span class="logo-text">CAFÉ <span class="highlight">ZENKAI</span></span>
         </div>
+        <div class="menu-toggle" id="mobile-menu">
+           <i data-lucide="menu"></i>
+        </div>
         <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#concepto">Concepto</a></li>
@@ -160,7 +163,7 @@
                     <span><i data-lucide="users"></i>12 cupos</span>
                     <span><i data-lucide="calendar"></i>4 semanas</span>
                 </div>
-                <button class="btn-t-orange">Inscribirse</button>
+                <button type="button" class="btn-t-orange" onclick="openEnroll('Introducción a la Programación')">Inscribirse</button>
                 <button class="t-btn-blue" onclick="openFlyer('./static/img/progra.png')">Ver Información</button>
             </div>
             <div class="card t-card blue-glow">
@@ -171,7 +174,7 @@
                     <span><i data-lucide="users"></i>10 cupos</span>
                     <span><i data-lucide="calendar"></i>3 semanas</span>
                 </div>
-                <button class="btn-t-blue">Inscribirse</button>
+                <button  type="button" class="btn-t-blue" onclick="openEnroll('Diseño Gráfico')">Inscribirse</button>
                 <button class="t-btn-orange" onclick="openFlyer('./static/img/diseño.png')">Ver Información</button>
             </div>
             <div class="card t-card orange-glow">
@@ -182,7 +185,7 @@
                     <span><i data-lucide="users"></i>12 cupos</span>
                     <span><i data-lucide="calendar"></i>5 semanas</span>
                 </div>
-                <button class="btn-t-orange">Inscribirse</button>
+                <button type="button" class="btn-t-orange" onclick="openEnroll('Fundamentos UI/UX')">Inscribirse</button>
                 <button class="t-btn-blue" onclick="openFlyer('./static/img/uiux.png')">Ver Información</button>
             </div>
             <div class="card t-card blue-glow">
@@ -193,7 +196,7 @@
                     <span><i data-lucide="users"></i>20 cupos</span>
                     <span><i data-lucide="calendar"></i>4 semanas</span>
                 </div>
-                <button class="btn-t-blue">Inscribirse</button>
+                <button type="button" class="btn-t-blue" onclick="openEnroll('Marketing Digital')">Inscribirse</button>
                 <button class="t-btn-orange" onclick="openFlyer('./static/img/marketing.png')">Ver Información</button>
             </div>
             <div class="card t-card orange-glow">
@@ -204,7 +207,7 @@
                     <span><i data-lucide="users"></i>8 cupos</span>
                     <span><i data-lucide="calendar"></i>3 semanas</span>
                 </div>
-                <button class="btn-t-orange">Inscribirse</button>
+                <button type="button" class="btn-t-orange" onclick="openEnroll('Mantenimiento de Computadoras')">Inscribirse</button>
                 <button class="t-btn-blue" onclick="openFlyer('./static/img/compu.png')">Ver Información</button>
             </div>
         </div>
@@ -217,6 +220,25 @@
     </div>
 </div>
 
+
+    <div id="enrollModal" class="modal" style="display: none;"> <div class="modal-content enroll-card" onclick="event.stopPropagation()">
+        <span class="close-modal" onclick="closeEnrollModal()">&times;</span>
+        <h3>Inscripción Rápida</h3>
+        <p id="courseName" class="text-blue" style="color: #00d4ff !important; font-weight: bold;">Curso</p>
+        
+        <form id="quickEnrollForm">
+            <div class="input-group">
+                <label for="enroll_name">Nombre</label>
+                <input type="text" id="enroll_name" placeholder="Tu nombre" required>
+            </div>
+            <div class="input-group">
+                <label for="enroll_phone">Teléfono</label>
+                <input type="tel" id="enroll_phone" placeholder="0412-0000000" required>
+            </div>
+            <button type="submit" class="btn-large orange">ENVIAR DATOS</button>
+        </form>
+    </div>
+</div>
     <section class="section" id="reservaciones">
         <div class="reservation-container">
             <div class="res-content">
