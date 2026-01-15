@@ -213,11 +213,12 @@
         </div>
     </section>
 
-    <div id="flyerModal" class="modal" onclick="closeModal()">
-    <span class="close-modal">&times;</span>
+    <div id="flyerModal" class="modal" onclick="closeFlyer()">
+    <span class="close-modal" onclick="closeFlyer()">×</span>
     <div class="modal-content" onclick="event.stopPropagation()">
         <img id="flyerImg" src="" alt="Flyer del Taller">
     </div>
+</div>
 </div>
 
 
@@ -442,7 +443,7 @@
                     <i data-lucide="phone"></i>
                     <div>
                        <h3>Teléfono</h3>
-                       <p>+58 412 XXX XXXX</p>
+                       <a href="tel:+584146523140" class="c-btn">+58 4146523140</a>
                     </div>
                 </div>
 

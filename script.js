@@ -1,16 +1,30 @@
 // --- FUNCIONES GLOBALES (Deben estar fuera para que el onclick del HTML las vea) ---
 
 // Modal de Información (Flyer)
+// --- FUNCIONES DEL FLYER ---
 window.openFlyer = function(imageSrc) {
     const modal = document.getElementById('flyerModal');
     const modalImg = document.getElementById('flyerImg');
     if(modal && modalImg) {
         modalImg.src = imageSrc;
-        modal.classList.add('active');
+        modal.style.display = 'flex'; // Asegura visibilidad
+        setTimeout(() => {
+            modal.classList.add('active');
+        }, 10);
         document.body.style.overflow = 'hidden';
     }
 };
 
+window.closeFlyer = function() {
+    const modal = document.getElementById('flyerModal');
+    if(modal) {
+        modal.classList.remove('active');
+        setTimeout(() => {
+            modal.style.display = 'none';
+        }, 300);
+        document.body.style.overflow = 'auto';
+    }
+};
 
 // Función forzada de apertura
 window.openEnroll = function(course) {

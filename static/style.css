@@ -799,6 +799,11 @@ ul { margin-top: 5px;}
     margin: 0 auto;
 }
 
+.c-btn {
+    text-decoration: none;
+    color: var(--blue-zenkai);
+}
+
 .zenkai-form {
     background: var(--card-bg);
     padding: 40px;
